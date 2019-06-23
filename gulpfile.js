@@ -6,9 +6,6 @@ var watch = require('gulp-watch');
 
 const outputName = 'math.js'; //edit this line to change output file name
 
-var timer = null;
-
-
 gulp.task('tsify', () => {
 	const tsProject = typescript.createProject('tsconfig.json');
 
