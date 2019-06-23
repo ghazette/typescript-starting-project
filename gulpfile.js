@@ -2,12 +2,16 @@ var gulp = require('gulp');
 var typescript = require('gulp-typescript');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var watch = require('gulp-watch');
 
 const outputName = 'math.js'; //edit this line to change output file name
 
-const tsProject = typescript.createProject('tsconfig.json');
+var timer = null;
+
 
 gulp.task('tsify', () => {
+	const tsProject = typescript.createProject('tsconfig.json');
+
 	return gulp.src('./src/**/*.ts')
 	.pipe(tsProject())
 	.pipe(concat(outputName))
@@ -20,5 +24,6 @@ gulp.task('uglify', () => {
 	.pipe(gulp.dest(`./build`))
 })
 
-gulp.task('default', gulp.series('tsify', 'uglify'))
-
+gulp.task('default',() => {
+	return watch('./src/**/*.ts', gulp.series('tsify', 'uglify'));
+})

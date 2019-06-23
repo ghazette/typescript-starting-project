@@ -1,8 +1,8 @@
 {
-  "name": "maths",
+  "name": "appname",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {},
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
     "typescript": "^3.5.2"
   }
 }
