@@ -1,6 +1,6 @@
 # typescript-starting-project
 
-Start a new typescript project easily, the project is recompiled on file changed,  only one Javascript uglified file left :)
+Start a new typescript project easily, the project is recompiled on file changed, all files are uglified:)
 
 # Install packages and gulp client
 ``
