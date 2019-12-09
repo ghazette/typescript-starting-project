@@ -8,6 +8,4 @@ npm install -g gulp-cli && npm install
 ``
 
 # Run
-``
-Just execute the command "gulp" and it will start the default task (compiling all *.ts from src folder into one JS file in build folder)
-``
+Just execute the command ``gulp`` and it will start the default task (compiling all *.ts from src folder into one JS file in build folder)
