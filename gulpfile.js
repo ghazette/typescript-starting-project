@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var typescript = require('gulp-typescript');
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-terser');
 var watch = require('gulp-watch');
 
-const outputName = 'math.js'; //edit this line to change output file name
+const outputName = 'bundle.js'; //edit this line to change output file name
 
 gulp.task('tsify', () => {
 	const tsProject = typescript.createProject('tsconfig.json');
